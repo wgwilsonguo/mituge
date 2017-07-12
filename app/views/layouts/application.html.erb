@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Energy Club</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  </head>
+
+
+<body style="padding-top: 70px">
+
+	<nav class="navbar navbar-light navbar-fixed-top" style="background-color: #ffffff">
+	  <a class="navbar-brand" href="/"><%= image_tag("logo.jpg", height: '32', alt: 'Site Logo') %></a>
+	  <ul class="nav navbar-nav">
+	  	<li class="nav-item">
+	      <a class="nav-link" href="/#aboutus">About Us</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="/#committees">Committees</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="http://energycf.mit.edu/" target="_blank">Career Fair</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="researchfair" target="_blank">Research Fair</a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="/#team">Executive Team</a>
+	    </li>
+	    <!-- 
+	    <li class="nav-item">
+	      <a class="nav-link" href="team">Full Team</a>
+	    </li>
+		-->
+	    <li class="nav-item float-xs-right">
+	    	<a class="nav-link" href="alumni">Alumni Directory</a>
+	    </li>
+	  </ul>
+	</nav>
+
+	<%= yield %>
+
+</body> 
+
+</html>
